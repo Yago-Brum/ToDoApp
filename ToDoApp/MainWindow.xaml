@@ -23,6 +23,7 @@
             <Button Content="Add" Width="100" Margin="5" Click="AddTask_Click"/>
             <Button Content="Edit" Width="100" Margin="5" Click="EditTask_Click"/>
             <Button Content="Delete" Width="100" Margin="5" Click="DeleteTask_Click"/>
+            <Button Content="Sort by Priority" Width="150" Margin="5" Click="SortByPriority_Click"/>
         </StackPanel>
     </Grid>
 </Window>

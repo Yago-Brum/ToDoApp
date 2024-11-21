@@ -66,5 +66,32 @@ namespace ToDoApp
                 MessageBox.Show("Please select a task to delete.");
             }
         }
+
+        // Evento para ordenar por prioridade
+        private void SortByPriority_Click(object sender, RoutedEventArgs e)
+        {
+            var sortedTasks = Tasks.OrderByDescending(task => GetPriorityValue(task.Priority)).ToList();
+
+            // Atualiza a coleção ObservableCollection
+            Tasks.Clear();
+            foreach (var task in sortedTasks)
+            {
+                Tasks.Add(task);
+            }
+
+            TaskListView.Items.Refresh();
+        }
+
+        // Método para atribuir um valor numérico à prioridade
+        private int GetPriorityValue(string priority)
+        {
+            return priority.ToLower() switch
+            {
+                "high" => 3,
+                "medium" => 2,
+                "low" => 1,
+                _ => 0 // Para casos onde a prioridade seja nula ou inválida
+            };
+        }
     }
 }
