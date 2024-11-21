@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ahD3jw5PI/0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yagob\\.nuget\\packages\\linq2db\\5.4.1\\linq2db.5.4.1.nupkg.sha512",
+    "C:\\Users\\yagob\\.nuget\\packages\\linq2db.sqlite\\5.4.1\\linq2db.sqlite.5.4.1.nupkg.sha512",
+    "C:\\Users\\yagob\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\yagob\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512"
+  ],
+  "logs": []
+}
