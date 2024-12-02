@@ -1,26 +1,78 @@
-﻿using System;
+﻿using OpenAI;
+using OpenAI.Chat;
+using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+
 
 namespace ToDoApp
 {
     public partial class AddTaskWindow : Window
     {
-        public string TaskTitle { get; private set; }
-        public string TaskDescription { get; private set; }
-        public string TaskDueDateTime { get; private set; }
-        public string TaskPriority { get; private set; }
+        private OpenAIClient _openAIClient;
+
+        public string TaskTitle { get; private set; } = string.Empty;
+        public string TaskDescription { get; private set; } = string.Empty;
+        public string TaskDueDateTime { get; private set; } = string.Empty;
+        public string TaskPriority { get; private set; } = string.Empty;
 
         private readonly TaskDatabase _db = new TaskDatabase();
 
         public AddTaskWindow()
         {
             InitializeComponent();
+            _openAIClient = new OpenAIClient(new OpenAIAuthentication(""));
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        private async void GenerateDescriptionButton_Click(object sender, RoutedEventArgs e)
         {
+            string title = TaskTitleTextBox.Text;
+
+            // Verifique se o título não está vazio
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Please enter a task title before generating a description.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Prompt inicial
+            string prompt = $"Generate a detailed description for the task titled in 300 caracteres: {title}";
+
+            try
+            {
+                // Criar mensagens para o chat
+                var chatMessages = new[]
+                {
+                    new Message(Role.System, "You are a helpful assistant."),
+                    new Message(Role.User, prompt)
+                };
+
+                // Requisição para geração de resposta
+                var chatRequest = new ChatRequest(chatMessages, model: "gpt-3.5-turbo");
+
+                // Obter a resposta do modelo
+                var chatResponse = await _openAIClient.ChatEndpoint.GetCompletionAsync(chatRequest);
+
+                // Preencher a descrição com o resultado
+                string responseContent = chatResponse.FirstChoice.Message.Content.ToString().Trim();
+                TaskDescriptionTextBox.Text = responseContent;
+            }
+            catch (Exception ex)
+            {
+                // Tratamento de erro
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
+        private async void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(TaskTitleTextBox.Text))
+            {
+                MessageBox.Show("Please enter a task title.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             try
             {
                 TaskTitle = TaskTitleTextBox.Text;
@@ -41,7 +93,6 @@ namespace ToDoApp
 
                 // Combina a data com a hora
                 DateTime dueDateTime = TaskDueDatePicker.SelectedDate.Value.Add(time.TimeOfDay);
-
                 TaskDueDateTime = dueDateTime.ToString("yyyy-MM-dd HH:mm:ss");
 
                 TaskPriority = PriorityComboBox.Text;
@@ -61,7 +112,7 @@ namespace ToDoApp
 
                 // Salva no banco
                 var db = new TaskDatabase();
-                db.AddTask(newTask);
+                await Task.Run(() => db.AddTask(newTask));
 
                 DialogResult = true;
                 Close();
@@ -82,10 +133,19 @@ namespace ToDoApp
         }
         private void ValidateTimeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
-            var textBox = sender as TextBox;
-            string newText = textBox.Text.Insert(textBox.SelectionStart, e.Text);
+            if (sender is not TextBox textBox)
+            {
+                e.Handled = true; // Cancela a entrada se o sender não for um TextBox
+                return;
+            }
 
-            // Validar formato parcial (hora ou minuto)
+            // Garante que o texto atual do TextBox não seja nulo
+            string currentText = textBox.Text ?? string.Empty;
+
+            // Insere o texto digitado no ponto atual do cursor
+            string newText = currentText.Insert(textBox.SelectionStart, e.Text);
+
+            // Valida o formato do texto após a inserção
             if (!IsValidTimeFormat(newText))
             {
                 e.Handled = true; // Cancela a entrada se não for válida
@@ -95,28 +155,41 @@ namespace ToDoApp
         private void AddPlaceholder(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
+
+            if (textBox == null) return; // Verifica se o TextBox é nulo
+
+            // Verifica se o texto do TextBox está vazio ou contém apenas espaços em branco
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
+                // Define o valor de placeholder (00:00) e ajusta a cor do texto
                 textBox.Text = "00:00";
                 textBox.Foreground = System.Windows.Media.Brushes.Gray;
             }
             else
             {
-                // Ajustar para o formato correto ao sair do campo
+                // Quando o texto não está vazio, formata o texto no formato correto
                 textBox.Text = FormatTime(textBox.Text);
+
+                // Ajusta a cor do texto para preto
                 textBox.Foreground = System.Windows.Media.Brushes.Black;
             }
         }
 
+
         private void RemovePlaceholder(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
+
+            if (textBox == null) return; // Verifica se o sender é um TextBox válido
+
+            // Se o texto for "00:00", ele será limpo
             if (textBox.Text == "00:00")
             {
                 textBox.Text = string.Empty;
-                textBox.Foreground = System.Windows.Media.Brushes.Black;
+                textBox.Foreground = System.Windows.Media.Brushes.Black; // Define a cor preta ao remover o placeholder
             }
         }
+
 
         private bool IsValidTimeFormat(string input)
         {

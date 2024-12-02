@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\addtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\addtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\addtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\addtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\edittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\edittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\edittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\edittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|c:\\users\\yagob\\source\\repos\\todoapp\\todoapp\\todoapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8AE4A7DF-FB60-4855-834A-84E1A5103777}|ToDoApp\\ToDoApp.csproj|solutionrelative:todoapp\\todoapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditTaskWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\EditTaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToDoApp\\EditTaskWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\EditTaskWindow.xaml.cs",
+              "RelativeToolTip": "ToDoApp\\EditTaskWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:23:52.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToDoApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ToDoApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:01:39.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ToDoApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\MainWindow.xaml",
+              "RelativeToolTip": "ToDoApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T21:58:52.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddTaskWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\AddTaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToDoApp\\AddTaskWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\AddTaskWindow.xaml.cs",
+              "RelativeToolTip": "ToDoApp\\AddTaskWindow.xaml.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAcwFsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:25:28.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddTaskWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\AddTaskWindow.xaml",
+              "RelativeDocumentMoniker": "ToDoApp\\AddTaskWindow.xaml",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\AddTaskWindow.xaml",
+              "RelativeToolTip": "ToDoApp\\AddTaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T21:58:28.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditTaskWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\EditTaskWindow.xaml",
+              "RelativeDocumentMoniker": "ToDoApp\\EditTaskWindow.xaml",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\EditTaskWindow.xaml",
+              "RelativeToolTip": "ToDoApp\\EditTaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-28T00:21:41.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskModel.cs",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\TaskModel.cs",
+              "RelativeDocumentMoniker": "ToDoApp\\TaskModel.cs",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\TaskModel.cs",
+              "RelativeToolTip": "ToDoApp\\TaskModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T21:58:22.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\TaskDatabase.cs",
+              "RelativeDocumentMoniker": "ToDoApp\\TaskDatabase.cs",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\TaskDatabase.cs",
+              "RelativeToolTip": "ToDoApp\\TaskDatabase.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwFMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T21:58:20.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ToDoApp.csproj",
+              "DocumentMoniker": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+              "RelativeDocumentMoniker": "ToDoApp\\ToDoApp.csproj",
+              "ToolTip": "C:\\Users\\yagob\\source\\repos\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+              "RelativeToolTip": "ToDoApp\\ToDoApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T21:58:05.969Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

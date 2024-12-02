@@ -1,0 +1,13 @@
+C:\Temp\ToDoApp.exe
+C:\Temp\ToDoApp.dll
+C:\Temp\ToDoApp.deps.json
+C:\Temp\ToDoApp.runtimeconfig.json
+C:\Temp\ToDoApp.pdb
+C:\Temp\linq2db.dll
+C:\Temp\Newtonsoft.Json.dll
+C:\Temp\OpenAI-DotNet.dll
+C:\Temp\System.Data.SQLite.dll
+C:\Temp\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Temp\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Temp\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Temp\runtimes\win-x86\native\SQLite.Interop.dll

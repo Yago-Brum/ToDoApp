@@ -27,3 +27,7 @@ C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\ToDoApp.gen
 C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\ref\ToDoApp.dll
 C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\AddTaskWindow.baml
 C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\AddTaskWindow.g.cs
+C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\EditTaskWindow.baml
+C:\Users\yagob\source\repos\ToDoApp\ToDoApp\obj\Debug\net8.0-windows\EditTaskWindow.g.cs
+C:\Users\yagob\source\repos\ToDoApp\ToDoApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\yagob\source\repos\ToDoApp\ToDoApp\bin\Debug\net8.0-windows\OpenAI-DotNet.dll

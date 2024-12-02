@@ -47,12 +47,6 @@ namespace ToDoApp
             }
         }
 
-        // Editar uma tarefa selecionada (função a ser implementada)
-        private void EditTask_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Edit functionality not implemented yet.");
-        }
-
         // Excluir uma tarefa selecionada
         private void DeleteTask_Click(object sender, RoutedEventArgs e)
         {
@@ -66,10 +60,10 @@ namespace ToDoApp
                 MessageBox.Show("Please select a task to delete.");
             }
         }
-
         // Evento para ordenar por prioridade
         private void SortByPriority_Click(object sender, RoutedEventArgs e)
         {
+            // Ordena as tarefas pela prioridade, da maior para a menor
             var sortedTasks = Tasks.OrderByDescending(task => GetPriorityValue(task.Priority)).ToList();
 
             // Atualiza a coleção ObservableCollection
@@ -79,19 +73,57 @@ namespace ToDoApp
                 Tasks.Add(task);
             }
 
+            // Força a atualização da lista de exibição
             TaskListView.Items.Refresh();
         }
 
         // Método para atribuir um valor numérico à prioridade
-        private int GetPriorityValue(string priority)
+        public int GetPriorityValue(string? priority)
         {
-            return priority.ToLower() switch
+            // Verifique se o valor de 'priority' é nulo ou vazio e trate isso
+            if (string.IsNullOrEmpty(priority))
             {
-                "high" => 3,
-                "medium" => 2,
-                "low" => 1,
-                _ => 0 // Para casos onde a prioridade seja nula ou inválida
-            };
+                return 0; // Pode retornar um valor padrão, como 0, para tarefas com prioridade indefinida
+            }
+
+            // Retorna a prioridade numérica baseada no valor da string (exemplo de prioridades)
+            switch (priority.ToLower())
+            {
+                case "high":
+                    return 3; // Alta prioridade
+                case "medium":
+                    return 2; // Prioridade média
+                case "low":
+                    return 1; // Baixa prioridade
+                default:
+                    return 0; // Se não for um valor conhecido, define uma prioridade baixa por padrão
+            }
+        }
+
+        private void EditTask_Click(object sender, RoutedEventArgs e)
+        {
+            // Verificar se há uma tarefa selecionada
+            var selectedTask = TaskListView.SelectedItem as TaskModel;
+
+            if (selectedTask == null)
+            {
+                MessageBox.Show("Por favor, selecione uma tarefa para editar.", "Editar Tarefa", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Criar uma janela/modal para editar a tarefa (exemplo básico de entrada)
+            EditTaskWindow editWindow = new EditTaskWindow(selectedTask);
+
+            if (editWindow.ShowDialog() == true)
+            {
+                // Atualizar a lista de tarefas
+                var index = Tasks.IndexOf(selectedTask);
+                if (index >= 0)
+                {
+                    Tasks[index] = editWindow.UpdatedTask;
+                    TaskListView.Items.Refresh();
+                }
+            }
         }
     }
 }
